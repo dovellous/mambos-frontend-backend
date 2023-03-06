@@ -1,3 +1,8 @@
+html, body {
+  font-family: 'Kohinoor Bangla', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
 header.header-5 {
 
 
@@ -86,4 +91,33 @@ header.header-5 {
 
 .logo{
   min-width: 160px;
+}
+
+.mobile-nav {
+  background-color: #720a0c;
+
+}
+.mobile-nav.show {
+  width: 95vw !important;
+}
+
+.mobile-nav .sidebar-nav .metismenu a:hover, .mobile-nav .sidebar-nav .metismenu a:focus, .mobile-nav .sidebar-nav .metismenu a:active {
+  color: #720a0c;
+  background: #ffc107;
+}
+
+header.header-5 #hamburger {
+  font-size: 44px;
+  color: #e20714;
+}
+
+.w-100{
+  width: 100% !important;
+}
+
+.banner-slider-img {
+  display: block;
+  max-width: 300px !important;
+  margin: auto;
+  margin-bottom: 40px;
 }

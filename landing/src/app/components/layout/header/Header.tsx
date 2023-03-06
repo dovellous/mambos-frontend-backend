@@ -9,6 +9,12 @@ type HeaderProps = {
 export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props}) : any | null => {
 
   const { user }: any = useAuth();
+
+  const [physicalAddress, setPhysicalAddress] = useState('17 Park Street, Harare')
+
+  const [phoneNumber, setPhoneNumber] = useState('+263 (71) 921 6187');
+
+  const [emailAddress, setEmailAddress] = useState('delivery@mamboschicken.co.zw')
   
   const [navMenu, setNavMenu] = useState<any>([])
     
@@ -123,33 +129,45 @@ export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props
                                         </button>
                                         <nav className="sidebar-nav">
                                             <ul className="metismenu" id="mobile-menu">
-                                                <li><a className="has-arrow" href="#">Homes</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="index-1.html">home 1</a></li>
-                                                        <li><a href="index-2.html">home 2</a></li>
-                                                        <li><a href="index-3.html">home 3</a></li>
-                                                        <li><a href="index-4.html">home 4</a></li>
-                                                        <li><a href="index-5.html">home 5</a></li>
-                                                        <li><a href="index-6.html">home 6</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="about.html">about</a></li>
-                                                <li><a href="services.html">services</a></li>
-                                                <li><a href="#">Case Study</a></li>
-                                                <li><a href="news.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                                {navMenu.map((menuItem:any, menuIndex:number)=>(
+                                                    <li><a
+                                                        key={menuIndex}
+                                                        href={menuItem.href}
+                                                        title={menuItem.slug}
+                                                        target={menuItem.target}
+                                                        className={menuItem.subMenu.left > 0 ? 'has-arrow' : ''}
+                                                    >{menuItem.title}</a>
+                                                        {menuItem.subMenu.length > 0 && (
+                                                            <ul className="sub-menu">
+                                                                {menuItem.subMenu.map((subMenuItem:any, subMenuIndex:number)=>(
+                                                                    <li>
+                                                                        <a
+                                                                            key={subMenuIndex}
+                                                                            href={subMenuItem.href}
+                                                                            title={subMenuItem.slug}
+                                                                            target={subMenuItem.target}>{subMenuItem.title}</a>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        )}
+                                                    </li>
+                                                ))}
                                             </ul>
                                         </nav>
-                                    
+
+                                        <div className="header-btn-cta buttons-wrapper">
+                                            <a href="contact.html" className="theme-btn mr-10 cyan w-100 mt-2 mb-2" style={{width: '100% !important', display: 'table'}}>
+                                                <img src="/assets/elements/buttons/btn-menu-download-app.svg" className={' w-100'} alt="Mambo's Chicken" style={{width: '100% !important'}}/>
+                                            </a>
+                                            <a href="contact.html" className="theme-btn magenta w-100 mt-2 mb-2" style={{width: '100% !important', display: 'table'}}>
+                                                <img src="/assets/elements/buttons/btn-menu-order-online.svg" className={' w-100'} alt="Mambo's Chicken" style={{width: '100% !important'}}/>
+                                            </a>
+                                        </div>
                                         <div className="action-bar">
-                                            <a href="#"><i className="icon-location-dot"></i>55 Clark St, Brooklyn, NY
-                                                11201, USA</a>
-                                            <a href="mailto:techex@gmail.com"><i
-                                                className="fal fa-envelope-open-text"></i>techex@gmail.com</a>
-                                            <a href="tel:123-456-7890"><i className="fal fa-phone"></i>+ 88 ( 9800 )
-                                                6802</a>
-                                            <a href="contact.html" className="d-btn theme-btn black">Consultancy <i
-                                                className="icon-arrow-right-1"></i></a>
+                                            <a href="#"><i className="icon-location-dot"></i>{physicalAddress}</a>
+                                            <a href={"mailto:"+emailAddress}><i
+                                                className="fal fa-envelope-open-text"></i>{emailAddress}</a>
+                                            <a href={"tel:"+phoneNumber}><i className="fal fa-phone"></i>{phoneNumber}</a>
                                         </div>
                                     </div>
                                 </div>

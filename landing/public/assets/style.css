@@ -185,6 +185,72 @@ input, textarea, button {
   }
 }
 
+@font-face {
+  font-family: 'Kohinoor Bangla';
+  src: url('KohinoorBangla-Medium.eot');
+  src: local('Kohinoor Bangla Medium'), local('KohinoorBangla-Medium'),
+  url('KohinoorBangla-Medium.eot?#iefix') format('embedded-opentype'),
+  url('KohinoorBangla-Medium.woff2') format('woff2'),
+  url('KohinoorBangla-Medium.woff') format('woff'),
+  url('KohinoorBangla-Medium.svg#KohinoorBangla-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kohinoor Bangla';
+  src: url('KohinoorBangla-Light.eot');
+  src: local('Kohinoor Bangla Light'), local('KohinoorBangla-Light'),
+  url('KohinoorBangla-Light.eot?#iefix') format('embedded-opentype'),
+  url('KohinoorBangla-Light.woff2') format('woff2'),
+  url('KohinoorBangla-Light.woff') format('woff'),
+  url('KohinoorBangla-Light.svg#KohinoorBangla-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kohinoor Bangla';
+  src: url('KohinoorBangla-Bold.eot');
+  src: local('Kohinoor Bangla Bold'), local('KohinoorBangla-Bold'),
+  url('KohinoorBangla-Bold.eot?#iefix') format('embedded-opentype'),
+  url('KohinoorBangla-Bold.woff2') format('woff2'),
+  url('KohinoorBangla-Bold.woff') format('woff'),
+  url('KohinoorBangla-Bold.svg#KohinoorBangla-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kohinoor Bangla';
+  src: url('KohinoorBangla-Semibold.eot');
+  src: local('Kohinoor Bangla Semibold'), local('KohinoorBangla-Semibold'),
+  url('KohinoorBangla-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('KohinoorBangla-Semibold.woff2') format('woff2'),
+  url('KohinoorBangla-Semibold.woff') format('woff'),
+  url('KohinoorBangla-Semibold.svg#KohinoorBangla-Semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kohinoor Bangla';
+  src: url('KohinoorBangla-Regular.eot');
+  src: local('Kohinoor Bangla Regular'), local('KohinoorBangla-Regular'),
+  url('KohinoorBangla-Regular.eot?#iefix') format('embedded-opentype'),
+  url('KohinoorBangla-Regular.woff2') format('woff2'),
+  url('KohinoorBangla-Regular.woff') format('woff'),
+  url('KohinoorBangla-Regular.svg#KohinoorBangla-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* ------------------------------------------------------------------
     Template All Variables Defined - Value Change with Your's Need
  -------------------------------------------------------------------- */

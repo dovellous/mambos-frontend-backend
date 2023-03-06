@@ -19,22 +19,9 @@ export const HomePageSlider:React.FunctionComponent = () : any | null => {
                         <div className="row">
                             <div className="col-12">
                                 <div className="hero-contents text-center">
-                                    <a className="theme-btn-sm" data-animation="fadeInUp" data-delay="0">we are
-                                        creative it service agency</a>
-                                    <h1 data-animation="fadeInUp" data-delay="0.4s">Preparing For Your Success Best IT
-                                        Solutions</h1>
-                                    <div data-animation="fadeInUp" data-delay="0.6s">
-                                        <p>Sed ut perspiciatis unde omnis natus error sit voluptatem accusa ntium
-                                            doloremque laudantium totam rem aperiamea</p>
-                                    </div>
-                                
-                                    <div className="btn__wrapper d-flex flex-wrap justify-content-center"
-                                         data-animation="fadeInUp" data-delay="0.8s">
-                                        <a href="#" className="theme-btn">Service We Provide <i
-                                            className="icon-arrow-right-1"></i></a>
-                                        <a href="#" className="theme-btn">learn more <i
-                                            className="icon-arrow-right-1"></i></a>
-                                    </div>
+                                    <h1 data-animation="fadeInUp" data-delay="0.4s">
+                                        <img src="/assets/elements/banners/strip-btn-cooking-good.svg" className={' w-100 banner-slider-img'} alt="Mambo's Chicken" style={{width: '100% !important'}}/>
+                                    </h1>
                                 </div>
                             </div>
                         </div>
