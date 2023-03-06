@@ -81,7 +81,7 @@ Author: RRDevs
                     $this.removeClass($animationType);
                 });
             });
-        };
+        }
 
         $(".testimonial-carousel-active").owlCarousel({        
             items: 1,     

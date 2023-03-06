@@ -1,0 +1,89 @@
+header.header-5 {
+
+
+
+  //
+  .main-header-wraper {
+    left: 0;
+    top: 0;
+    width: 100%;
+
+
+    //Topbar
+    .top-header {
+      height: 40px;
+      padding: 6px 50px;
+      background-color: #69ffd5;
+
+      .header-cta ul li {
+        margin-right: 20px;
+        display: inline-block;
+        height: 24px;
+        border: 1px solid red;
+        overflow: hidden;
+      }
+
+    }
+
+    // Stylish Action Buttons
+    .theme-btn {
+      z-index: 1;
+      font-weight: 500;
+      position: relative;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+
+      &.cyan::before {
+        background-color: #69ffd5;
+      }
+
+      &.magenta::before {
+        background-color: #ff00b3;
+      }
+
+      img{
+        min-height: 40px !important;
+      }
+    }
+
+  }
+
+  //Header Menu
+  .main-menu ul > li > a {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 40.5px 24px;
+    display: inline-block;
+    color: #211e3b;
+    text-transform: uppercase;
+  }
+
+}
+
+.header-gutter {
+  top: 145px;
+  min-height: 100px;
+}
+
+.hero-slide-wrapper.techex-landing-page .single-slide::after {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.preloader .animation-preloader .spinner {
+  border-top-color: #cc0000;
+}
+
+.logo{
+  min-width: 160px;
+}

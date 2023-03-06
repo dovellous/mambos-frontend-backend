@@ -81,7 +81,7 @@ Author: RRDevs
                     $this.removeClass($animationType);
                 });
             });
-        };
+        }
 
         $(".testimonial-carousel-active").owlCarousel({        
             items: 1,     
@@ -113,7 +113,6 @@ Author: RRDevs
         $(".testimonial-carousel-3").owlCarousel({        
             items: 2,
             nav:true,
-            items: 1,
             margin: 30,     
             loop: true,
             dots: false,
