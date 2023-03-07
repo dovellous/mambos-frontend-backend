@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom/client';
 import App from './app/App';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './app/auth/provider/AuthProvider';
+import store from './app/redux/store'
+import { Provider } from 'react-redux'
 
 const {PUBLIC_URL} = process.env;
 
@@ -12,9 +14,11 @@ ReactDOM.createRoot(
 ).render(
   <React.StrictMode>
     <BrowserRouter>
-      <AuthProvider   >
-        <App basename={PUBLIC_URL} />
-      </AuthProvider>
+        <Provider store={store}>
+          <AuthProvider   >
+            <App basename={PUBLIC_URL} />
+          </AuthProvider>
+        </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );

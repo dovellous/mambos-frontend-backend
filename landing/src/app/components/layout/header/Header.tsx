@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
+import {useDispatch} from "react-redux";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../../../auth/provider/AuthProvider";
+import {setCurrency} from "../../../redux/features/menu/MenuSlice";
 
 type HeaderProps = {
     children: React.ReactNode;
@@ -9,6 +11,8 @@ type HeaderProps = {
 export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props}) : any | null => {
 
   const { user }: any = useAuth();
+    
+    const dispatch = useDispatch();
 
   const [physicalAddress, setPhysicalAddress] = useState('17 Park Street, Harare')
 
@@ -17,7 +21,13 @@ export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props
   const [emailAddress, setEmailAddress] = useState('delivery@mamboschicken.co.zw')
   
   const [navMenu, setNavMenu] = useState<any>([])
-    
+  
+  const dispatchChangeCurrency:Function = (currency:any)=>{
+      
+      dispatch(setCurrency(currency))
+      
+  }
+  
     useEffect(()=>{
         
         setNavMenu([
@@ -71,6 +81,45 @@ export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props
     <>
     
         <header className="header-wrap header-5">
+            <div className="top-header d-none d-md-block">
+                <div className="container-flud">
+                    <div className="row">
+                        <div className="col-md-7 pr-md-0 col-12">
+                            <div className="header-cta">
+                                <ul>
+                                    <li>
+                                        <a href="mailto:support@gmail.com"><i
+                                            className="fal fa-envelope"></i> support@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+8801700080702"><i className="fal fa-phone"></i> +012 (345) 67
+                                            89</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-md-5 col-12">
+                            <div className="header-right-cta d-flex justify-content-end">
+                                <div className="social-profile mr-30">
+                                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i className="fab fa-twitter"></i></a>
+                                    <a href="#"><i className="fab fa-behance"></i></a>
+                                    <a href="#"><i className="fab fa-youtube"></i></a>
+                                </div>
+                                |
+                                <div className="lan-select ml-30">
+                                    <form>
+                                        <select onChange={(e)=>{ dispatchChangeCurrency(e.target.value) }}>
+                                            <option value="USD">USD - United States Dollars</option>
+                                            <option value="ZWL">ZWL - Zimbabwean Dollars (RTGS)</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="main-header-wraper">
                 <div className="container-fluid">
                     <div className="row align-items-center justify-content-between">
@@ -85,7 +134,7 @@ export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props
                             <div className="main-menu">
                                 <ul>
                                     {navMenu.map((menuItem:any, menuIndex:number)=>(
-                                    <li><a
+                                    <li key={menuIndex}><a
                                             key={menuIndex}
                                             href={menuItem.href}
                                             title={menuItem.slug}
@@ -93,13 +142,13 @@ export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props
                                         {menuItem.subMenu.length > 0 && (
                                         <ul className="sub-menu">
                                         {menuItem.subMenu.map((subMenuItem:any, subMenuIndex:number)=>(
-                                            <li>
+                                            <li key={subMenuIndex}>
                                                 <a
                                                     key={subMenuIndex}
                                                     href={subMenuItem.href}
                                                     title={subMenuItem.slug}
                                                     target={subMenuItem.target}>{subMenuItem.title}</a>
-                                        </li>
+                                            </li>
                                         ))}
                                         </ul>
                                         )}
@@ -130,17 +179,18 @@ export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props
                                         <nav className="sidebar-nav">
                                             <ul className="metismenu" id="mobile-menu">
                                                 {navMenu.map((menuItem:any, menuIndex:number)=>(
-                                                    <li><a
-                                                        key={menuIndex}
-                                                        href={menuItem.href}
-                                                        title={menuItem.slug}
-                                                        target={menuItem.target}
-                                                        className={menuItem.subMenu.left > 0 ? 'has-arrow' : ''}
-                                                    >{menuItem.title}</a>
+                                                    <li key={menuIndex}>
+                                                        <a
+                                                            key={menuIndex}
+                                                            href={menuItem.href}
+                                                            title={menuItem.slug}
+                                                            target={menuItem.target}
+                                                            className={menuItem.subMenu.left > 0 ? 'has-arrow' : ''}
+                                                        >{menuItem.title}</a>
                                                         {menuItem.subMenu.length > 0 && (
                                                             <ul className="sub-menu">
                                                                 {menuItem.subMenu.map((subMenuItem:any, subMenuIndex:number)=>(
-                                                                    <li>
+                                                                    <li key={subMenuIndex}>
                                                                         <a
                                                                             key={subMenuIndex}
                                                                             href={subMenuItem.href}

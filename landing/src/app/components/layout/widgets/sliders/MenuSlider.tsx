@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 
-export const HomePageSlider:React.FunctionComponent = () : any | null => {
+export const MenuSlider:React.FunctionComponent = () : any | null => {
     
-    const  [slides, setSlides] = useState<any>([1,2,3,4,5]);
+    const  [slides, setSlides] = useState<any>([1]);
 
   return (
     <>
@@ -20,7 +20,7 @@ export const HomePageSlider:React.FunctionComponent = () : any | null => {
                             <div className="col-12">
                                 <div className="hero-contents text-center">
                                     <h1 data-animation="fadeInUp" data-delay="0.4s">
-                                        <img src="/assets/elements/banners/strip-btn-cooking-good.svg" className={' w-100 banner-slider-img'} alt="Mambo's Chicken" style={{width: '100% !important'}}/>
+                                        <img src="/assets/elements/banners/strip-btn-craving.svg" className={' w-100 banner-slider-img'} alt="Mambo's Chicken" style={{width: '100% !important'}}/>
                                     </h1>
                                 </div>
                             </div>

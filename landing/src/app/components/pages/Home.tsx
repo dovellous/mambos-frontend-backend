@@ -7,7 +7,7 @@ type PageProps = {
   children?: React.ReactNode;
 }
 
-export const Home:React.FunctionComponent<PageProps> = ({ children, ...props}) : any | null => {
+const Home:React.FunctionComponent<PageProps> = ({ children, ...props}) : any | null => {
   
   const { user }: any = useAuth();
   
@@ -440,3 +440,5 @@ export const Home:React.FunctionComponent<PageProps> = ({ children, ...props}) :
   );
   
 };
+
+export default Home;
