@@ -25,7 +25,7 @@ export const MenuFoodItems: React.FunctionComponent = (): any | null => {
     
             {menuCategories.products.map((category: any, categoryIndex: number) => (
             
-            <div className="container menu-category" key={categoryIndex}>
+            <div id={`section_${categoryIndex}_${category.category_slug}`} className="container menu-category" key={categoryIndex}>
                 
                 <div className={'menu-cat-banner'} style={{backgroundImage: `url(/assets/elements/banners/banner-${getMenuSlug(category.category_slug)}.svg)`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', minHeight: '250px'}}>
                     <img src={`/assets/elements/banners/txt-${getMenuSlug(category.category_slug)}.svg`} className="category-banner-text-icon" />

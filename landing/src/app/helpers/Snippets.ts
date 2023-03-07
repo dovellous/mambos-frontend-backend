@@ -1,6 +1,7 @@
 const Snippets:any = {
+
 	strings: {
-	
+
 	},
 	arrays: {
 	
@@ -27,6 +28,17 @@ const Snippets:any = {
 	},
 	storage: {
 	
+	},
+	elements: {
+		scrollTo: (id:any)=>{
+
+			const yOffset:any = -280;
+			const element:any = document.getElementById(id);
+			const y:any = element.getBoundingClientRect().top + window.scrollY + yOffset;
+
+			window.scrollTo({top: y, behavior: 'smooth'});
+
+		}
 	}
 }
 

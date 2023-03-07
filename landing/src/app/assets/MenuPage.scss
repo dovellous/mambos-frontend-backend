@@ -83,8 +83,58 @@ img.category-banner-text-icon {
 
       }
 
+      a.active{
+        color: #770000;
+        background-color: yellow;
+      }
+
     }
 
   }
 
 }
+
+.menu-nav-bar-wrapper {
+
+  &.fixed{
+    position: fixed;
+    top: 100px;
+    width: 100%;
+  }
+
+  &.static{
+    position: initial;
+    top: initial;
+    width: 100%;
+  }
+
+}
+
+.ReactModalPortal {
+  z-index: 2147483646 !important;
+  display: inline-block;
+  position: absolute;
+
+  .slide-pane.slide-pane_from_right.some-custom-class.content-after-open{
+    width: 525px !important;
+  }
+
+  .chatfood-container .chatfood-order-system-frame.chatfood-visible {
+    visibility: visible;
+    right: 0;
+  }
+
+  #cfwOrderSystem{
+    top: 0;
+    height: 100vh;
+    transition: all .3s ease;
+    visibility: visible;
+    position: fixed !important;
+    width: 100%;
+    border: 0;
+    z-index: auto;
+    right: 0px;
+  }
+
+}
+

@@ -3,6 +3,8 @@ import {useDispatch} from "react-redux";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../../../auth/provider/AuthProvider";
 import {setCurrency} from "../../../redux/features/menu/MenuSlice";
+import SlidingPane from "react-sliding-pane";
+import "react-sliding-pane/dist/react-sliding-pane.css";
 
 type HeaderProps = {
     children: React.ReactNode;
@@ -13,6 +15,8 @@ export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props
   const { user }: any = useAuth();
     
     const dispatch = useDispatch();
+
+    const [isPanelOpen, setIsPanelOpen] = useState(false);
 
   const [physicalAddress, setPhysicalAddress] = useState('17 Park Street, Harare')
 
@@ -159,10 +163,10 @@ export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props
                         </div>
                         <div className="header-right d-flex align-items-center">
                             <div className="header-btn-cta buttons-wrapper">
-                                <a href="contact.html" className="theme-btn mr-10 cyan">
+                                <a href="/download" className="theme-btn mr-10 cyan">
                                     <img src="/assets/elements/buttons/btn-menu-download-app.svg" alt="logo" />
                                 </a>
-                                <a href="contact.html" className="theme-btn magenta">
+                                <a href="#." className="theme-btn magenta" onClick={(e)=>{ setIsPanelOpen(true) }}>
                                     <img src="/assets/elements/buttons/btn-menu-order-online.svg" alt="logo" />
                                 </a>
                             </div>
@@ -229,6 +233,23 @@ export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props
             </div>
         </header>
         <div className="header-gutter"></div>
+        <SlidingPane
+            className="some-custom-class"
+            overlayClassName="some-custom-overlay-class"
+            isOpen={isPanelOpen}
+            title=""
+            subtitle=""
+            hideHeader={true}
+            onRequestClose={() => {
+                // triggered on "<" on left top click or on outside click
+                setIsPanelOpen(false);
+            }}
+        >
+            <iframe className="chatfood-order-system-frame chatfood-visible" id="cfwOrderSystem"
+                    frameBorder="0" src="https://app.mamboschicken.com/platform">
+
+            </iframe>
+        </SlidingPane>
         {/*    /header-gutter    */}
     </>
   );
