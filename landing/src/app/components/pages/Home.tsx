@@ -175,29 +175,29 @@ const Home:React.FunctionComponent<PageProps> = ({ children, ...props}) : any | 
                   <div className="cta-content">
                       <div className="row align-items-center">
                           <div className="col-xl-6 col-12">
-                              <h1 className={'text-white'}>Stay Informed</h1>
-                              <h3 className={'text-white'}>Sign me up to Mambo’s Chicken emails for access to exclusive events and flaming Competitions!</h3>
-                              <div className="w-100 mt-40">
-                                  <div className="single-footer-wid site_footer_widget newsletter_widget">
+                              <h1 className={'text-black'}>Stay Informed</h1>
+                              <h3 className={'text-muted mt-3'}>Sign me up to Mambo’s Chicken emails for access to exclusive events and flaming Competitions!</h3>
+                              <div className="banner-strip-d-flex  w-100 mt-5">
+                                  <div className="single-footer-wid site_footer_widget newsletter_widget w-80" >
                                       <div className="newsletter_box">
-                                          <form action="#">
+                                          <form action="#" className="mt-0">
                                               <input type="email" placeholder="Email address" />
-                                                  <button className="submit-btn" type="submit"><i
-                                                      className="fal fa-envelope-open-text"></i></button>
+                                              <button className="submit-btn" type="submit"><i
+                                                  className="fal fa-envelope-open-text"></i></button>
                                           </form>
                                       </div>
                                   </div>
                               </div>
                           </div>
-                          <div className="col-xl-6 col-12">
-                              <h1 className={'text-white'}>Na - Enjoyment?</h1>
-                              <h3 className={'text-white'}>Download our app for a taste of royalty delivered right to you doorstep.</h3>
-                              <div className="w-100 mt-40">
-                                  <a href="contact.html" className="theme-btn mr-30">
-                                      <img src={`assets/elements/buttons/btn-app-store.png`} className={'w-100'} />
+                          <div className="col-xl-6 col-12" style={{minHeight: '255px'}}>
+                              <h1 className={'text-black'}>Na - Enjoyment?</h1>
+                              <h3 className={'text-muted mt-3'}>Download our app for a taste of royalty delivered right to you doorstep.</h3>
+                              <div className="banner-strip-d-flex  w-100 mt-5" style={{maxWidth: '300px'}}>
+                                  <a href="contact.html" className="download-app android mr-30 ">
+                                      &nbsp;
                                   </a>
-                                  <a href="services-details.html" className="theme-btn">
-                                      <img src={`assets/elements/buttons/btn-google-play.png`} className={'w-100'} />
+                                  <a href="services-details.html" className="download-app ios">
+                                      &nbsp;
                                   </a>
                               </div>
                           </div>

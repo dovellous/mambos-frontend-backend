@@ -206,7 +206,7 @@ export const MenuFoodItems: React.FunctionComponent = (): any | null => {
                                                        dangerouslySetInnerHTML={{__html: getProductDescription(product[1].product_description)}}></p>
                                                     <div className="banner-strip-d-flex mt-3">
                                                         <div className="price-text">
-                                                            {menuCategories.currency} ${menuCategories.currency === 'USD' ? product[1].gaap_forex_price : product[1].gaap_local_price}
+                                                            {menuCategories.currency} {menuCategories.currency === 'USD' ? Snippets.numbers.formatCurrency.format(product[1].gaap_forex_price) : Snippets.numbers.formatCurrency.format(product[1].gaap_local_price)}
                                                         </div>
                                                         <div>
                                                             <img src={`/assets/elements/banners/food-card-hearts.svg`}/>
@@ -265,14 +265,37 @@ export const MenuFoodItems: React.FunctionComponent = (): any | null => {
                         }}
                         src={`https://www.mamboschicken.com/uploads/products/food-1024/${selectedProductDetails.product_code_old}.jpg`} className={'w-100'} />
 
-                    <h3 className="mb-3 mt-3">{selectedProductDetails.product_name}</h3>
+                    <h3 className="mt-3">{selectedProductDetails.product_name}</h3>
+                    <small className="text-muted">{selectedProductDetails.gaap_department_name}</small>
                     <p className="line-height-24"
                        dangerouslySetInnerHTML={{__html: selectedProductDetails.product_description}}></p>
 
+                    <div className="banner-strip-d-flex mt-3">
+                        <h3>
+                            USD {Snippets.numbers.formatCurrency.format(selectedProductDetails.gaap_forex_price)} or ZWD {Snippets.numbers.formatCurrency.format(selectedProductDetails.gaap_local_price)}
+                        </h3>
+                        <div>
+                            <img src={`/assets/elements/banners/food-card-hearts.svg`}/>
+                        </div>
+                    </div>
+
+                    <p className="mt-3 mb-3 banner-strip-d-flex" style={{backgroundColor: '#eeeeee', padding: '5px 20px', border: '1px solid #d1d1d1'}}>
+                        <small>Allergens: <strong>{selectedProductDetails.product_allergens}</strong></small>
+                        <small>Preparation Time: <strong>{selectedProductDetails.product_preparation} mins</strong></small>
+                    </p>
+
                     {selectedProductDetails.di_carb_g !== "0.00" && (
 
-                    <table width="100%" className="tg mb-2 mt-2">
-                        <thead>
+                    <table width="100%" className="tg mb-2 mt-2"
+                        style={{
+                            backgroundColor: '#f7f7f7',
+                            border: '1px solid #d1d1d1'
+                        }}>
+                        <thead
+                            style={{
+                                backgroundColor: '#d5d5d5',
+                                border: '1px solid #d1d1d1'
+                            }}>
                         <tr className="tg-0pky">
                             <th className="tg-0pky">Energy</th>
                             <th className="tg-0pky">Carbs</th>
@@ -298,14 +321,30 @@ export const MenuFoodItems: React.FunctionComponent = (): any | null => {
 
                     )}
 
-                    <div className="banner-strip-d-flex mt-3">
-                        <div className="price-text">
-                            USD ${selectedProductDetails.gaap_forex_price} or ZWD ${selectedProductDetails.gaap_local_price}
-                        </div>
-                        <div>
-                            <img src={`/assets/elements/banners/food-card-hearts.svg`}/>
-                        </div>
-                    </div>
+                    {selectedProductDetails.addons.hasOwnProperty('gaap_sides_items') && (
+                        <>
+                            <h3 className="mt-5">Sides</h3>
+
+                            {Object.keys(selectedProductDetails.addons.gaap_sides_items).length > 1 ? (
+
+                            Snippets.objects.convertToArray(selectedProductDetails.addons.gaap_sides_items).map((side:any, sideIndex:number)=>(
+
+                            <div className="products-modal mb-3 mt-3" key={sideIndex}>
+                                <div className="banner-strip-d-flex " style={{borderBottom: '2px dotted #ccc'}}>
+                                    <div>{side[1].product_name}</div>
+                                    <div>{menuCategories.currency} {Snippets.numbers.formatCurrency.format(menuCategories.currency==="USD"?side[1].gaap_forex_price:side[1].gaap_local_price)}</div>
+                                </div>
+                            </div>
+
+                            ))
+
+                            ):(
+
+                                <h5>None</h5>
+
+                            )}
+                        </>
+                    )}
 
                 </div>
             </Modal>
