@@ -252,8 +252,10 @@ export const MenuFoodItems: React.FunctionComponent = (): any | null => {
             >
                 <div className="card border-radius-zero border-0 shadow-sm" style={{
                     backgroundColor: '#ffffff',
-                    minHeight: '270px',
-                    padding: '20px'
+                    maxHeight: '90vh',
+                    padding: '20px',
+                    overflow: 'scroll',
+                    display: 'block'
                 }}>
 
                     <img

@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useAuth } from "../../auth/provider/AuthProvider";
 import {HomePageSlider} from "../layout/widgets/sliders/HomePageSlider";
 
+
 type PageProps = {
   children?: React.ReactNode;
 }
@@ -17,153 +18,7 @@ const Home:React.FunctionComponent<PageProps> = ({ children, ...props}) : any | 
           <HomePageSlider />
     
           <div className="content-area">
-        
-              <section className="we-provide-solutions">
-                  <div className="container">
-                      <div className="row align-items-center">
-                          <div className="col-12 text-center">
-                              <div className="section-title">
-                                  <a className="theme-btn-sm mb-15" data-aos="fade-up">HOW CAN HELP YOU</a>
-                                  <h1 data-aos="fade-up" data-aos-delay="100">We Provide Best IT Solutions For Business
-                                      25 Years We Provide Solutions</h1>
-                              </div>
-                          </div>
-                      </div>
-                
-                      <div className="row">
-                          <div className="col-12 col-md-6 col-xl-3" data-aos="fade-up">
-                              <a href="" className="single-provide-solutions"
-                                 style={{backgroundImage: "url('assets/img/techex-landing-page/we-provide-solutopns-bg.png')" }} >
-                                  <div className="number">
-                                      01
-                                  </div>
-                                  <div className="content">
-                                      <h3>IT Consultancy</h3>
-                                      <p>Lorem ipsum dolor sit consectetur adipiscing eiusmod tempor.</p>
-                                      <span className="read-more text-uppercase">read more <i
-                                          className="icon-arrow-right-1"></i></span>
-                                  </div>
-                              </a>
-                          </div>
-                    
-                          <div className="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="100">
-                              <a href="" className="single-provide-solutions"
-                                 style={{backgroundImage: "url('assets/img/techex-landing-page/we-provide-solutopns-bg.png')" }} >
-                                  <div className="number">
-                                      02
-                                  </div>
-                                  <div className="content">
-                                      <h3>Digital Services</h3>
-                                      <p>Lorem ipsum dolor sit consectetur adipiscing eiusmod tempor.</p>
-                                      <span className="read-more text-uppercase">read more <i
-                                          className="icon-arrow-right-1"></i></span>
-                                  </div>
-                              </a>
-                          </div>
-                    
-                          <div className="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="150">
-                              <a href="" className="single-provide-solutions"
-                                 style={{backgroundImage: "url('assets/img/techex-landing-page/we-provide-solutopns-bg.png')" }} >
-                                  <div className="number">
-                                      03
-                                  </div>
-                                  <div className="content">
-                                      <h3>Excellent Support</h3>
-                                      <p>Lorem ipsum dolor sit consectetur adipiscing eiusmod tempor.</p>
-                                      <span className="read-more text-uppercase">read more <i
-                                          className="icon-arrow-right-1"></i></span>
-                                  </div>
-                              </a>
-                          </div>
-                    
-                          <div className="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="200">
-                              <a href="" className="single-provide-solutions"
-                                 style={{backgroundImage: "url('assets/img/techex-landing-page/we-provide-solutopns-bg.png')" }} >
-                                  <div className="number">
-                                      04
-                                  </div>
-                                  <div className="content">
-                                      <h3>Supper Managment</h3>
-                                      <p>Lorem ipsum dolor sit consectetur adipiscing eiusmod tempor.</p>
-                                      <span className="read-more text-uppercase">read more <i
-                                          className="icon-arrow-right-1"></i></span>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </section>
-        
-              <div className="client-brand-logo-wrap techex-landing-page pt-0">
-                  <div className="container">
-                      <div className="brand-carousel-active d-flex justify-content-between owl-carousel">
-                          <div className="single-client">
-                              <img src="/assets/img/brand/4.png" alt="" />
-                          </div>
-                          <div className="single-client">
-                              <img src="/assets/img/brand/b4.png" alt="" />
-                          </div>
-                          <div className="single-client">
-                              <img src="/assets/img/brand/2.png" alt="" />
-                          </div>
-                          <div className="single-client">
-                              <img src="/assets/img/brand/1.png" alt="" />
-                          </div>
-                          <div className="single-client">
-                              <img src="/assets/img/brand/3.png" alt="" />
-                          </div>
-                      </div>
-                  </div>
-              </div>
-        
-              <section className="about-wrapper techex-landing-page">
-                  <div className="container">
-                      <div className="row">
-                          <div className="col-lg-6">
-                              <div className="about-img" data-aos="fade-right">
-                                  <img src="/assets/img/techex-landing-page/our-vision.png" className="img-fluid"
-                                       alt="" />
-                                
-                                      <div className="video-play-btn" data-aos="fade-up" data-aos-delay="100">
-                                          <a href="https://www.youtube.com/watch?v=E1xkXZs0cAQ"
-                                             className="play-video popup-video"><i className="fas fa-play"></i></a>
-                                      </div>
-                              </div>
-                          </div>
-                    
-                          <div className="col-lg-6">
-                              <div className="section-title">
-                                  <a className="theme-btn-sm mb-15" data-aos="fade-left">ABOUT COMPANY</a>
-                                  <h1 data-aos="fade-left" data-aos-delay="100">25 Years Of Experience In IT
-                                      Solutions</h1>
-                                  <div data-aos="fade-left" data-aos-delay="150">
-                                      <p>Sed ut perspiciatis unde omnis natus error sity voluptatem accusa ntium
-                                          doloremque laudantie totam rem aperiamea queipsa quae abillonven tore
-                                          veritatis.</p>
-                                  </div>
-                            
-                                  <div className="rate-content-grid d-flex justify-content-between">
-                                      <div className="single-rate-item" data-aos="fade-up">
-                                          <h3>320</h3>
-                                          <p>Active Status Clients</p>
-                                      </div>
-                                      <div className="single-rate-item" data-aos="fade-up" data-aos-delay="100">
-                                          <h3>850</h3>
-                                          <p>Successful Projects</p>
-                                      </div>
-                                      <div className="single-rate-item" data-aos="fade-up" data-aos-delay="150">
-                                          <h3>35</h3>
-                                          <p>In-House Engineers</p>
-                                      </div>
-                                  </div>
-                            
-                                  <a href="#" className="theme-btn black" data-aos="fade-up" data-aos-delay="200">Know
-                                      us more <i className="icon-arrow-right-1"></i></a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </section>
+
         
               <section className="our-service-provide techex-landing-page">
                   <div className="container">
@@ -320,13 +175,23 @@ const Home:React.FunctionComponent<PageProps> = ({ children, ...props}) : any | 
                   </div>
               </section>
 
-              <section className="blog-section techex-landing-page">
+              <section className="blog-section techex-landing-page"
+
+                style={{
+                    backgroundImage: "url('/assets/elements/banners/bg-body.svg')",
+                    backgroundSize: 'cover',
+                    backgroundColor: '#a100ff',
+                    backgroundBlendMode: "difference",
+                    backgroundPosition: "center"
+                }}
+              >
                   <div className="container">
                       <div className="row">
                           <div className="col-12">
                               <div className="section-title text-center">
-                                  <a className="theme-btn-sm mb-15" data-aos="fade-up">ARTICLES & TIPES</a>
-                                  <h1 data-aos="fade-up" data-aos-delay="100">Get Every Single Updates</h1>
+                                  <h1 data-aos="fade-up" data-aos-delay="100">
+                                      <img src={`assets/elements/banners/txt-home-favourites.svg`} />
+                                  </h1>
                               </div>
                           </div>
                       </div>
@@ -414,6 +279,15 @@ const Home:React.FunctionComponent<PageProps> = ({ children, ...props}) : any | 
               </section>
           </div>
           {/*    content-area    */}
+
+          <section className="cta-banner style-3">
+              <div className="container-fluid bg-cover section-bg"
+                   style={{background: "none", padding: 0}}>
+
+                  <img src={`assets/elements/banners/banner-home-footer.png`} className={'w-100'} />
+
+              </div>
+          </section>
     
           <section className="cta-banner style-3">
               <div className="container-fluid bg-cover section-bg"
