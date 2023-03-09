@@ -124,3 +124,117 @@ header.header-5 #hamburger {
   padding: 102.5px 0;
   position: relative;
 }
+
+
+.newsletter_widget .newsletter_box form {
+  height: 64px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.newsletter_widget .newsletter_box form input {
+  width: 75%;
+  position: relative;
+  background: #f5f5f5;
+  padding-left: 25px;
+  padding-right: 15px;
+  line-height: 1;
+  color: #086ad7;
+  border-radius: 7px;
+  font-size: 16px;
+}
+.newsletter_widget .newsletter_box form input::-webkit-input-placeholder {
+  color: #696969;
+  text-transform: capitalize;
+}
+.newsletter_widget .newsletter_box form input::-moz-placeholder {
+  color: #696969;
+  text-transform: capitalize;
+}
+.newsletter_widget .newsletter_box form input:-ms-input-placeholder {
+  color: #696969;
+  text-transform: capitalize;
+}
+.newsletter_widget .newsletter_box form input::-ms-input-placeholder {
+  color: #696969;
+  text-transform: capitalize;
+}
+.newsletter_widget .newsletter_box form input::placeholder {
+  color: #696969;
+  text-transform: capitalize;
+}
+.newsletter_widget .newsletter_box form button {
+  width: 25%;
+  height: 100%;
+  background: #086ad7;
+  color: #fff;
+  display: inline-block;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 22px;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.newsletter_widget .newsletter_box form button:hover {
+  color: #000;
+}
+.newsletter_widget .newsletter_box span {
+  color: #cacaca;
+}
+
+.contact_widget_2 .contact-us .single-contact-info .icon {
+  color: #e20714;
+}
+
+.footer-4 .social-link a {
+  background-color: #ffffff;
+  color: #e20714 !important;
+}
+
+.footer-4 .social-link a:hover {
+  color: #fff !important;
+  background-color: #e20714;
+}
+
+.footer-4 {
+  background-color: #000000;
+}
+
+.footer-4 a:hover {
+  color: #fbc415 !important;
+}
+
+.footer-4 .footer-bottom-content a:hover {
+  color: #fbc415 !important;
+}
+
+.contact_widget_2 .contact-us .single-contact-info .icon  {
+  font-size: 16px;
+  padding: 0;
+  margin-top: -3px;
+  margin-right: 10px;
+}
+
+.footer-4 {
+  z-index: 1;
+  padding-top: 0;
+  margin-top: 0;
+  position: relative;
+  background-color: #211e3b;
+}
+
+header.header-5 .top-header .header-cta ul li a i {
+  margin-right: 10px;
+  color: #e20714;
+}
+
+header.header-5 .top-header .header-right-cta .social-profile a:hover {
+  color: #e20714;
+}
+
+header.header-5 .top-header .header-right-cta {
+  color: #e20714;
+}

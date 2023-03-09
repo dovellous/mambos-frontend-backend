@@ -22,155 +22,35 @@ const Home:React.FunctionComponent<PageProps> = ({ children, ...props}) : any | 
         
               <section className="our-service-provide techex-landing-page">
                   <div className="container">
-                      <div className="row align-items-center">
-                          <div className="col-12 text-center">
-                              <div className="section-title">
-                                  <a className="theme-btn-sm mb-15" data-aos="fade-up">what we Do</a>
-                                  <h1 data-aos="fade-up" data-aos-delay="100">We Provide Best Solutions For IT
-                                      Business</h1>
-                              </div>
-                          </div>
-                      </div>
-                
+
                       <div className="row text-center">
                           <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
-                              <div className="single-our-service style-2">
-                                  <div className="thumb bg-cover"
-                                       style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
-                                  <div className="content">
-                                      <div className="icon">
-                                          <i className="fal fa-envelope"></i>
-                                      </div>
-                                      <h3><a href="services-details.html">Product Engineering</a></h3>
-                                      <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
-                                      <a href="#" className="read-more text-uppercase">read more <i
-                                          className="icon-arrow-right-1"></i></a>
-                                  </div>
+                              <div className="single-blog-card style-3 content pt-5 pb-5 pl-3 pr-3">
+                                  <h3>
+                                      <img src={'/assets/elements/banners/home-3up-order.svg'} style={{height: '60px', marginBottom: '20px'}}/>
+                                  </h3>
+                                  <p>Order ahead and get your meal to-go from the restuarant.</p>
                               </div>
                           </div>
-                    
-                          <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
-                              <div className="single-our-service style-2">
-                                  <div className="thumb bg-cover"
-                                       style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
-                                  <div className="content">
-                                      <div className="icon">
-                                          <img src="/assets/img/techex-landing-page/sketch.png" alt="" />
-                                      </div>
-                                      <h3><a href="services-details.html">Web Development</a></h3>
-                                      <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
-                                      <a href="#" className="read-more text-uppercase">read more <i
-                                          className="icon-arrow-right-1"></i></a>
-                                  </div>
+
+                          <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
+                              <div className="single-blog-card style-3 content pt-5 pb-5 pl-3 pr-3">
+                                  <h3>
+                                      <img src={'/assets/elements/banners/home-3up-delivery.svg'} style={{height: '60px', marginBottom: '20px'}}/>
+                                  </h3>
+                                  <p>Craving a taste of Royalty? We deliver for free in the CBD. Ts & Cs apply.</p>
                               </div>
                           </div>
-                    
-                          <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="150">
-                              <div className="single-our-service style-2">
-                                  <div className="thumb bg-cover"
-                                       style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
-                                  <div className="content">
-                                      <div className="icon">
-                                          <img src="/assets/img/techex-landing-page/diagram.png" alt="" />
-                                      </div>
-                                      <h3><a href="services-details.html">UX/UI Strategy</a></h3>
-                                      <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
-                                      <a href="#" className="read-more text-uppercase">read more <i
-                                          className="icon-arrow-right-1"></i></a>
-                                  </div>
+
+                          <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
+                              <div className="single-blog-card style-3 content pt-5 pb-5 pl-3 pr-3">
+                                  <h3>
+                                      <img src={'/assets/elements/banners/home-3up-feast.svg'} style={{height: '60px', marginBottom: '20px'}}/>
+                                  </h3>
+                                  <p>Na Enjoyment. Visit us, order your favourate meal, grab a table and Enjoy.</p>
                               </div>
                           </div>
-                      </div>
-                  </div>
-              </section>
-        
-              <section className="our-team-wrapper techex-landing-page">
-                  <div className="container">
-                      <div className="row align-items-center">
-                          <div className="col-12 text-center">
-                              <div className="section-title">
-                                  <a className="theme-btn-sm mb-15" data-aos="fade-up">MEET OUR EXPERT TEAM</a>
-                                  <h1 data-aos="fade-up" data-aos-delay="100">Meet Our Experience Team Members</h1>
-                              </div>
-                          </div>
-                      </div>
-                
-                      <div className="row">
-                          <div className="col-12 col-md-6 col-xl-3" data-aos="fade-up">
-                              <div className="single-member-card style-2">
-                                  <div className="member-img bg-cover bg-center"
-                                       style={{backgroundImage: "url('assets/img/techex-landing-page/tm1.jpg')" }} >
-                                  </div>
-                                  <div className="member-bio">
-                                      <h4>Lawrence Pacheco</h4>
-                                      <p>Web Developer</p>
-                                  </div>
-                                  <div className="social-profile">
-                                      <span>Follow on</span>
-                                      <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                      <a href="#"><i className="fab fa-twitter"></i></a>
-                                      <a href="#"><i className="fab fa-instagram"></i></a>
-                                      <a href="#"><i className="fab fa-behance"></i></a>
-                                  </div>
-                              </div>
-                          </div>
-                    
-                          <div className="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="100">
-                              <div className="single-member-card style-2">
-                                  <div className="member-img bg-cover bg-center"
-                                       style={{backgroundImage: "url('assets/img/techex-landing-page/tm2.jpg')" }} >
-                                  </div>
-                                  <div className="member-bio">
-                                      <h4>Lawrence Pacheco</h4>
-                                      <p>Web Developer</p>
-                                  </div>
-                                  <div className="social-profile">
-                                      <span>Follow on</span>
-                                      <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                      <a href="#"><i className="fab fa-twitter"></i></a>
-                                      <a href="#"><i className="fab fa-instagram"></i></a>
-                                      <a href="#"><i className="fab fa-behance"></i></a>
-                                  </div>
-                              </div>
-                          </div>
-                    
-                          <div className="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="150">
-                              <div className="single-member-card style-2">
-                                  <div className="member-img bg-cover bg-center"
-                                       style={{backgroundImage: "url('assets/img/techex-landing-page/tm3.jpg')" }} >
-                                  </div>
-                                  <div className="member-bio">
-                                      <h4>Timothy L. Figueroa</h4>
-                                      <p>Business Manager</p>
-                                  </div>
-                                  <div className="social-profile">
-                                      <span>Follow on</span>
-                                      <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                      <a href="#"><i className="fab fa-twitter"></i></a>
-                                      <a href="#"><i className="fab fa-instagram"></i></a>
-                                      <a href="#"><i className="fab fa-behance"></i></a>
-                                  </div>
-                              </div>
-                          </div>
-                    
-                          <div className="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="200">
-                              <div className="single-member-card style-2">
-                                  <div className="member-img bg-cover bg-center"
-                                       style={{backgroundImage: "url('assets/img/techex-landing-page/tm4.jpg')" }} >
-                                  </div>
-                                  <div className="member-bio">
-                                      <h4>Wallace S. Camacho</h4>
-                                      <p>Product Manager</p>
-                                  </div>
-                                  <div className="social-profile">
-                                      <span>Follow on</span>
-                                      <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                      <a href="#"><i className="fab fa-twitter"></i></a>
-                                      <a href="#"><i className="fab fa-instagram"></i></a>
-                                      <a href="#"><i className="fab fa-behance"></i></a>
-                                  </div>
-                              </div>
-                          </div>
+
                       </div>
                   </div>
               </section>
@@ -282,27 +162,43 @@ const Home:React.FunctionComponent<PageProps> = ({ children, ...props}) : any | 
 
           <section className="cta-banner style-3">
               <div className="container-fluid bg-cover section-bg"
-                   style={{background: "none", padding: 0}}>
+                   style={{background: "none", backgroundColor: '#efefef', padding: 0}}>
 
-                  <img src={`assets/elements/banners/banner-home-footer.png`} className={'w-100'} />
+                  <img src={`assets/elements/banners/banner-home-footer.png`} className={'w-100'} style={{marginTop: '-5px'}} />
 
               </div>
           </section>
     
-          <section className="cta-banner style-3">
+          <section className="cta-banner style-3" style={{backgroundColor: '#efefef'}}>
               <div className="container-fluid bg-cover section-bg"
                    style={{backgroundImage: "url('assets/img/cta_bg1.png')"}}>
                   <div className="cta-content">
                       <div className="row align-items-center">
-                          <div className="col-xl-7 text-white col-12 text-center text-xl-left">
-                              <h1>Ready To Get Free Consulations For <br /> Any Kind Of It Solutions ?</h1>
+                          <div className="col-xl-6 col-12">
+                              <h1 className={'text-white'}>Stay Informed</h1>
+                              <h3 className={'text-white'}>Sign me up to Mambo’s Chicken emails for access to exclusive events and flaming Competitions!</h3>
+                              <div className="w-100 mt-40">
+                                  <div className="single-footer-wid site_footer_widget newsletter_widget">
+                                      <div className="newsletter_box">
+                                          <form action="#">
+                                              <input type="email" placeholder="Email address" />
+                                                  <button className="submit-btn" type="submit"><i
+                                                      className="fal fa-envelope-open-text"></i></button>
+                                          </form>
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
-                          <div className="col-xl-5 col-12">
-                              <div className="btn-wraper d-flex flex-wrap justify-content-xl-end mt-2 mt-md-4 mt-xl-0">
-                                  <a href="contact.html" className="theme-btn">Get a quote <i
-                                      className="icon-arrow-right-1"></i></a>
-                                  <a href="services-details.html" className="theme-btn">read more <i
-                                      className="icon-arrow-right-1"></i></a>
+                          <div className="col-xl-6 col-12">
+                              <h1 className={'text-white'}>Na - Enjoyment?</h1>
+                              <h3 className={'text-white'}>Download our app for a taste of royalty delivered right to you doorstep.</h3>
+                              <div className="w-100 mt-40">
+                                  <a href="contact.html" className="theme-btn mr-30">
+                                      <img src={`assets/elements/buttons/btn-app-store.png`} className={'w-100'} />
+                                  </a>
+                                  <a href="services-details.html" className="theme-btn">
+                                      <img src={`assets/elements/buttons/btn-google-play.png`} className={'w-100'} />
+                                  </a>
                               </div>
                           </div>
                       </div>

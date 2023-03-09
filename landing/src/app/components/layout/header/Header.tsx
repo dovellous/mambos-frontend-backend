@@ -92,12 +92,11 @@ export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props
                             <div className="header-cta">
                                 <ul>
                                     <li>
-                                        <a href="mailto:support@gmail.com"><i
-                                            className="fal fa-envelope"></i> support@gmail.com</a>
+                                        <a href="mailto:delivery@mamboschicken.co.zw"><i
+                                            className="fal fa-envelope"></i> delivery@mamboschicken.co.zw</a>
                                     </li>
                                     <li>
-                                        <a href="tel:+8801700080702"><i className="fal fa-phone"></i> +012 (345) 67
-                                            89</a>
+                                        <a href="tel:+263719216187"><i className="fal fa-phone"></i>+263 (71) 921 6187</a>
                                     </li>
                                 </ul>
                             </div>
@@ -107,7 +106,7 @@ export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props
                                 <div className="social-profile mr-30">
                                     <a href="#"><i className="fab fa-facebook-f"></i></a>
                                     <a href="#"><i className="fab fa-twitter"></i></a>
-                                    <a href="#"><i className="fab fa-behance"></i></a>
+                                    <a href="#"><i className="fab fa-instagram"></i></a>
                                     <a href="#"><i className="fab fa-youtube"></i></a>
                                 </div>
                                 |
