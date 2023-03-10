@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e48848dd-7d0f-4f76-a2ac-4c2946cd8219" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app/components/layout/header/Navigation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app/components/pages/auth/Login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app/components/pages/landing/Dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app/components/pages/landing/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/landing/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/redux-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/assets/App.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/layout/footer/Footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,23 +38,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/app/components/pages" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/landing/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\backend\public" />
-      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\backend\src\app\components\pages" />
-      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\backend\src\app\components\layout\header" />
-      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\backend\src\app\components\pages\landing" />
-      <recent name="$PROJECT_DIR$/landing/public/assets/elements/banners" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/components/pages" />
+      <recent name="$PROJECT_DIR$/frontend/public/assets/elements/banners" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/helpers" />
+      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\frontend\src\app\helpers" />
+      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\frontend\src\app\components\layout\widgets\menu" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\backend\src\app\components\pages\settings" />
-      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\landing\src\app\assets" />
+      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\frontend\src\app\assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -76,8 +66,9 @@
       <updated>1678092165136</updated>
       <workItem from="1678092166801" duration="6693000" />
       <workItem from="1678126081415" duration="27870000" />
-      <workItem from="1678260245503" duration="12364000" />
-      <workItem from="1678415571508" duration="5734000" />
+      <workItem from="1678260245503" duration="13377000" />
+      <workItem from="1678346684254" duration="17239000" />
+      <workItem from="1678434504626" duration="1219000" />
     </task>
     <servers />
   </component>
