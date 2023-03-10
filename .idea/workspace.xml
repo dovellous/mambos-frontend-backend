@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e48848dd-7d0f-4f76-a2ac-4c2946cd8219" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/landing/public/assets/elements/banners/ad-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/components/layout/header/Navigation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/components/pages/auth/Login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/components/pages/landing/Dashboard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/components/pages/landing/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/assets/elements/banners/ad-10k-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/assets/elements/banners/ad-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/assets/elements/banners/ad-10k.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/assets/elements/banners/ad-delivery-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/assets/elements/banners/ad-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/assets/elements/banners/ad-delivery.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/assets/elements/banners/ad-pimometer-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/landing/public/assets/elements/banners/ad-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/public/assets/elements/banners/ad-pimometer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/src/app/assets/MenuPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/landing/src/app/assets/MenuPage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/src/app/components/layout/widgets/menu/MenuFoodItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/landing/src/app/components/layout/widgets/menu/MenuFoodItems.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/src/app/components/layout/widgets/menu/MenuNavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/landing/src/app/components/layout/widgets/menu/MenuNavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landing/src/data/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/landing/src/data/menu.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landing/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/landing/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/redux-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/landing/public/assets/elements/banners" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/public" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/landing/node_modules/typescript/lib" />
@@ -57,13 +55,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\backend\public" />
+      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\backend\src\app\components\pages" />
+      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\backend\src\app\components\layout\header" />
+      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\backend\src\app\components\pages\landing" />
       <recent name="$PROJECT_DIR$/landing/public/assets/elements/banners" />
-      <recent name="$PROJECT_DIR$/landing/src/app/helpers" />
-      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\landing\src\app\helpers" />
-      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\landing\src\app\components\layout\widgets\menu" />
-      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\landing\src\app\components\layout\widgets\banners" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\backend\src\app\components\pages\settings" />
       <recent name="Z:\git\sites\mambos\forntend\dvs-mambos-frontend\landing\src\app\assets" />
     </key>
   </component>
@@ -78,6 +77,7 @@
       <workItem from="1678092166801" duration="6693000" />
       <workItem from="1678126081415" duration="27870000" />
       <workItem from="1678260245503" duration="12364000" />
+      <workItem from="1678415571508" duration="5734000" />
     </task>
     <servers />
   </component>
