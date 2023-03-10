@@ -1,19 +1,20 @@
-import React, {useEffect} from 'react';
+import React, {lazy, useEffect} from 'react';
 import {useDispatch} from "react-redux";
 import FoodMenu from '../data/menu.json';
 import {setProducts, setAddons} from "./redux/features/menu/MenuSlice";
-
 import {useAuth} from "./auth/provider/AuthProvider";
 import RoutePath from './routes/RoutePath';
-import { Navbar } from './components/Navbar';
 import './assets/App.scss';
+
+
+
 
 type AppProps = {
   basename: string
 }
 
 const App: React.FC<AppProps> = ({basename}) => {
- 
+
     const dispatch = useDispatch();
     
     useEffect(()=>{
@@ -38,8 +39,6 @@ const App: React.FC<AppProps> = ({basename}) => {
         dispatch(setProducts(newMenuCategories));
         
         dispatch(setAddons(FoodMenu.addons));
-        
-        console.warn("::::: --- FoodMenu --- :::::", newMenuCategories, FoodMenu);
         
     },[])
     

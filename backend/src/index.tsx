@@ -10,7 +10,7 @@ import { Provider } from 'react-redux'
 const {PUBLIC_URL} = process.env;
 
 ReactDOM.createRoot(
-  document.getElementById('app') as HTMLElement
+  document.getElementById('layout-wrapper') as HTMLElement
 ).render(
   <React.StrictMode>
     <BrowserRouter>

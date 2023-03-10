@@ -9242,7 +9242,7 @@
                             }
                         },
                         "step_2": {
-                            "instructions": "Turn <b>right&lt;\/b&gt; onto <b>Samora Machel Ave&lt;\/b&gt;\/<wbr\><b>A5&lt;\/b&gt;",
+                            "instructions": "Turn <b>right&lt;\/b&gt; onto <b>Samora Machel Ave&lt;\/b&gt; <b>A5&lt;\/b&gt;",
                             "maneuver": "turn-right",
                             "start_location": {
                                 "lat": -17.8268794,
@@ -9266,9 +9266,8 @@
                             }
                         },
                         "step_5": {
-                            "instructions": "Turn <b>left&lt;\/b&gt; onto <b>Leander Rd&lt;\/b&gt;<div style="\ & quot;
-                            font - size: 0.9em\ & quot;
-                            ">Destination will be on the left&lt;\/div&gt;", "maneuver": "turn-left",
+                            "instructions": "Turn <b>left&lt;\/b&gt; onto <b>Leander Rd, Destination will be on the left&lt;\/div&gt;",
+                          "maneuver": "turn-left",
                             "start_location": {
                                 "lat": -17.8315103,
                                 "lng": 31.104574
