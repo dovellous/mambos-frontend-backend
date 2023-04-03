@@ -10,6 +10,9 @@ import Authorization from "../auth/middleware/Authorization";
 import PERMISSIONS from "../auth/permissions/Permissions";
 const Home = lazy(() => import("../components/pages/Home"));
 const Menu = lazy(() => import("../components/pages/Menu"));
+const Corporate = lazy(() => import("../components/pages/Corporate"));
+const Experience = lazy(() => import("../components/pages/Experience"));
+const Promotions = lazy(() => import("../components/pages/Promotions"));
 const Contacts = lazy(() => import("../components/pages/Contacts"));
 
 const RoutePath = () => {
@@ -19,6 +22,9 @@ const RoutePath = () => {
 		<Routes>
 			<Route path='/' element={<Home />}/>
 			<Route path='/menu' element={<Menu />}/>
+			<Route path='/corporate' element={<Corporate />}/>
+			<Route path='/mambos-experience' element={<Experience />}/>
+			<Route path='/promotion' element={<Promotions />}/>
 			<Route path='/contact-us' element={<Contacts />}/>
 			<Route element={<Authorization permissions={[PERMISSIONS.CAN_VIEW_ABOUT, PERMISSIONS.CAN_VIEW_ALL]}/>} >
 				<Route path='about' element={<About/>}/>
