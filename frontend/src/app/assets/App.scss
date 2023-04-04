@@ -280,3 +280,70 @@ header.header-5 .top-header .header-right-cta {
   border-radius: 0;
   background-color: #efefef;
 }
+
+.card-green .content{
+  background-color: 'green' !important;
+  color: '#ffffff' !important;
+}
+
+.yellow-slant {
+  background-color: #fbc415;
+padding: 0px 10px;
+color: #80402d;
+rotate: 4deg;
+}
+
+.single-blog-card:hover, .single-blog-card.active {
+  background-color: #4bed11;
+  -webkit-box-shadow: 0px 10px 60px 0px rgba(68, 224, 36, 0.45);
+  box-shadow: 0px 10px 60px 0px rgb(68, 224, 36);
+}
+
+img.tell-us-1 {
+  max-width: 100%;
+  margin-top: -90px;
+  margin-bottom: 50px;
+}
+
+img.tell-us-2 {
+  margin-top: 170px;
+}
+
+img.tell-us-3 {
+  margin-top: 170px;
+}
+
+.exp-container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  color: #ffffff;
+  background-color: rgb(0, 153, 255) !important;
+  margin-bottom: 32px;
+  padding: 30px 20px;
+  min-height: 180px;
+}
+
+.experience-name{
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.experience-image {
+  max-height: 48px;
+}
+
+.fs-24{
+  font-size: 24px !important;
+  color: #333333 !important;
+  font-weight: 400;
+}
+
+.max-width-500{
+  width: 500px !important; margin: auto;
+}

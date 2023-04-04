@@ -77,91 +77,96 @@ const Home:React.FunctionComponent<PageProps> = ({ children, ...props}) : any | 
                       </div>
                 
                       <div className="row">
+                        
+                      <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
+                              <div className="single-blog-card style-3 card-green">
+                                  <div className="blog-featured-thumb bg-cover"
+                                       style={{backgroundImage: "url('/assets/mbs/kush.jpg')" }} ></div>
+                                  <div className="content">
+                                      
+                                      <h3><strong>Half Family Pack Promo</strong></h3>
+                                      <div className="excerpt">
+                                          <p>
+                                            <ul>
+                                                <li>Half Flame Grilled Chicken</li>
+                                                <li>2 Std Chips</li>
+                                                <li>2 Green Salads</li>
+                                                <li>2 Mini Rolls</li>
+                                            </ul>
+                                          </p>
+                                      </div>
+                                      <div className="btn-link-share d-flex justify-content-between align-items-center">
+                                          <span className="yellow-slant"><strong>+ 2 Free drinks</strong></span>
+                                          <a href="#">
+                                            <img src='./assets/elements/banners/strip-img-art-hearts.svg' />
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    
                           <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
-                              <div className="single-blog-card style-3">
+                              <div className="single-blog-card style-3 card-green">
                                   <div className="blog-featured-thumb bg-cover"
-                                       style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
+                                       style={{backgroundImage: "url('/assets/mbs/sadza.jpg')" }} ></div>
                                   <div className="content">
-                                      <div className="post-top-meta d-flex flex-wrap align-items-center">
-                                          <div className="post-date">
-                                              <a href="#"><i className="fal fa-calendar-alt"></i>18 Jan 2022</a>
-                                          </div>
-                                          <div className="post-comment">
-                                              <a href="#"><i className="icon-message"></i>02 Comments</a>
-                                          </div>
-                                      </div>
-                                      <h3><a href="news-details.html">Web Development</a></h3>
+                                      
+                                      <h3><strong>Half Family Pack Promo</strong></h3>
                                       <div className="excerpt">
-                                          <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
+                                          <p>
+                                            <ul>
+                                                <li>Half Flame Grilled Chicken</li>
+                                                <li>2 Std Chips</li>
+                                                <li>2 Green Salads</li>
+                                                <li>2 Mini Rolls</li>
+                                            </ul>
+                                          </p>
                                       </div>
                                       <div className="btn-link-share d-flex justify-content-between align-items-center">
-                                          <a href="news-details.html">read more <i
-                                              className="icon-arrow-right-1"></i></a>
-                                          <a href="#"><i className="fal fa-share-alt"></i></a>
+                                          <span className="yellow-slant"><strong>+ 2 Free drinks</strong></span>
+                                          <a href="#">
+                                            <img src='./assets/elements/banners/strip-img-art-hearts.svg' />
+                                          </a>
                                       </div>
                                   </div>
                               </div>
                           </div>
                     
-                          <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
-                              <div className="single-blog-card style-3">
+                          <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
+                              <div className="single-blog-card style-3 card-green">
                                   <div className="blog-featured-thumb bg-cover"
-                                       style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
+                                       style={{backgroundImage: "url('/assets/mbs/rice.jpg')" }} ></div>
                                   <div className="content">
-                                      <div className="post-top-meta d-flex flex-wrap align-items-center">
-                                          <div className="post-date">
-                                              <a href="#"><i className="fal fa-calendar-alt"></i>18 Jan 2022</a>
-                                          </div>
-                                          <div className="post-comment">
-                                              <a href="#"><i className="icon-message"></i>02 Comments</a>
-                                          </div>
-                                      </div>
-                                      <h3><a href="news-details.html">Web Development</a></h3>
+                                      
+                                      <h3><strong>Half Family Pack Promo</strong></h3>
                                       <div className="excerpt">
-                                          <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
+                                          <p>
+                                            <ul>
+                                                <li>Half Flame Grilled Chicken</li>
+                                                <li>2 Std Chips</li>
+                                                <li>2 Green Salads</li>
+                                                <li>2 Mini Rolls</li>
+                                            </ul>
+                                          </p>
                                       </div>
                                       <div className="btn-link-share d-flex justify-content-between align-items-center">
-                                          <a href="news-details.html">read more <i
-                                              className="icon-arrow-right-1"></i></a>
-                                          <a href="#"><i className="fal fa-share-alt"></i></a>
+                                          <span className="yellow-slant"><strong>+ 2 Free drinks</strong></span>
+                                          <a href="#">
+                                            <img src='./assets/elements/banners/strip-img-art-hearts.svg' />
+                                          </a>
                                       </div>
                                   </div>
                               </div>
                           </div>
                     
-                          <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="150">
-                              <div className="single-blog-card style-3">
-                                  <div className="blog-featured-thumb bg-cover"
-                                       style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
-                                  <div className="content">
-                                      <div className="post-top-meta d-flex flex-wrap align-items-center">
-                                          <div className="post-date">
-                                              <a href="#"><i className="fal fa-calendar-alt"></i>18 Jan 2022</a>
-                                          </div>
-                                          <div className="post-comment">
-                                              <a href="#"><i className="icon-message"></i>02 Comments</a>
-                                          </div>
-                                      </div>
-                                      <h3><a href="news-details.html">Web Development</a></h3>
-                                      <div className="excerpt">
-                                          <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
-                                      </div>
-                                      <div className="btn-link-share d-flex justify-content-between align-items-center">
-                                          <a href="news-details.html">read more <i
-                                              className="icon-arrow-right-1"></i></a>
-                                          <a href="#"><i className="fal fa-share-alt"></i></a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
                       </div>
                   </div>
               </section>
           </div>
           {/*    content-area    */}
 
-          <section className="cta-banner style-3">
-              <div className="container-fluid bg-cover section-bg"
+          <section className="cta-banner style-3 p-0">
+              <div className="bg-cover section-bg w-100"
                    style={{background: "none", backgroundColor: '#efefef', padding: 0}}>
 
                   <img src={`assets/elements/banners/banner-home-footer.png`} className={'w-100'} style={{marginTop: '-5px'}} />

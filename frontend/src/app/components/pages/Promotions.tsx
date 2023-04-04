@@ -17,7 +17,7 @@ const Promotions:React.FunctionComponent<PageProps> = ({ children, ...props}) : 
     return (
         <>
 
-            <img src={'/assets/promo.jpg'} width={'100%'} />
+            <img src={'https://pbs.twimg.com/media/FrQQEGvX0AIL-nz?format=jpg&name=large'} width={'100%'} />
 
         </>
     );

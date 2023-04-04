@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../../auth/provider/AuthProvider";
-import {HomePageSlider} from "../layout/widgets/sliders/HomePageSlider";
+import {ExperiencePageSlider} from "../layout/widgets/sliders/ExperiencePageSlider";
 
 
 type PageProps = {
@@ -12,162 +12,168 @@ const Experience:React.FunctionComponent<PageProps> = ({ children, ...props}) : 
 
     const { user }: any = useAuth();
 
+    const [experiences, setExperiences] = React.useState<any>([]);
+
+    useEffect(() => {
+
+        setExperiences([
+            {
+                title: 'Mambo\'s Gesture',
+                img: 'ico-mambos-gesture'
+            },
+            {
+                title: 'Speed of Service',
+                img: 'ico-speed-of-service'
+            },
+            {
+                title: 'Service With A Smile',
+                img: 'ico-service-with-a-smile'
+            },
+            {
+                title: 'Good Music',
+                img: 'ico-good-music'
+            },
+            {
+                title: 'Clean Dining Area and Restrooms',
+                img: 'ico-clean-dining-area-and-restrooms'
+            },
+            {
+                title: 'Air Conditioned Ambience',
+                img: 'ico-air-conditioned-ambience'
+            },
+            {
+                title: 'Product Quality',
+                img: 'ico-product-quality'
+            },
+            {
+                title: 'Product Quality',
+                img: 'ico-product-quality'
+            }
+        ]);
+
+    }, []);
+
     return (
         <>
 
-            <HomePageSlider />
+            
 
-            <div className="content-area">
+            
 
+            <div className="content-areax">
 
-                <section className="our-service-provide techex-landing-page">
-                    <div className="container">
-
-                        <div className="row text-center">
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
-                                <div className="single-blog-card style-3 content pt-5 pb-5 pl-3 pr-3">
-                                    <h3>
-                                        <img src={'/assets/elements/banners/home-3up-order.svg'} style={{height: '60px', marginBottom: '20px'}}/>
-                                    </h3>
-                                    <p>Order ahead and get your meal to-go from the restuarant.</p>
-                                </div>
-                            </div>
-
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
-                                <div className="single-blog-card style-3 content pt-5 pb-5 pl-3 pr-3">
-                                    <h3>
-                                        <img src={'/assets/elements/banners/home-3up-delivery.svg'} style={{height: '60px', marginBottom: '20px'}}/>
-                                    </h3>
-                                    <p>Craving a taste of Royalty? We deliver for free in the CBD. Ts & Cs apply.</p>
-                                </div>
-                            </div>
-
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
-                                <div className="single-blog-card style-3 content pt-5 pb-5 pl-3 pr-3">
-                                    <h3>
-                                        <img src={'/assets/elements/banners/home-3up-feast.svg'} style={{height: '60px', marginBottom: '20px'}}/>
-                                    </h3>
-                                    <p>Na Enjoyment. Visit us, order your favourate meal, grab a table and Enjoy.</p>
-                                </div>
-                            </div>
-
-                        </div>
+                <section className="our-service-provide">
+                    <div className="img-container">
+                        <div className=""   ></div>
+                        <img src='/assets/mbs/mambos-exp-top-bg.png' width='100%' />
                     </div>
                 </section>
 
-                <section className="blog-section techex-landing-page"
+                <section className="our-service-provide">
+                    <div className="img-container">
+                        <div className=""   ></div>
+                        <img src='/assets/mbs/people-bg.png' width='100%' />
+                    </div>
+                </section>
 
-                         style={{
-                             backgroundImage: "url('/assets/elements/banners/bg-body.svg')",
-                             backgroundSize: 'cover',
-                             backgroundColor: '#a100ff',
-                             backgroundBlendMode: "difference",
-                             backgroundPosition: "center"
-                         }}
+                <section className="our-service-provide"
+                
+                    style={{
+                        backgroundImage: "url('/assets/mbs/tell-us-bg.png')",
+                        backgroundSize: 'cover',
+                        backgroundColor: '#a100ff',
+                        backgroundPosition: "center"
+                    }}
+                
                 >
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="section-title text-center">
-                                    <h1 data-aos="fade-up" data-aos-delay="100">
-                                        <img src={`assets/elements/banners/txt-home-favourites.svg`} />
-                                    </h1>
-                                </div>
+                    
+                    <div className="row">
+                        <div className="col-md-8">
+                            <div className="img-container">
+                                <img className='tell-us-1' src='/assets/mbs/chicken-on-wood.png' width='100%' />
                             </div>
                         </div>
 
-                        <div className="row">
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
-                                <div className="single-blog-card style-3">
-                                    <div className="blog-featured-thumb bg-cover"
-                                         style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
-                                    <div className="content">
-                                        <div className="post-top-meta d-flex flex-wrap align-items-center">
-                                            <div className="post-date">
-                                                <a href="#"><i className="fal fa-calendar-alt"></i>18 Jan 2022</a>
-                                            </div>
-                                            <div className="post-comment">
-                                                <a href="#"><i className="icon-message"></i>02 Comments</a>
-                                            </div>
-                                        </div>
-                                        <h3><a href="news-details.html">Web Development</a></h3>
-                                        <div className="excerpt">
-                                            <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
-                                        </div>
-                                        <div className="btn-link-share d-flex justify-content-between align-items-center">
-                                            <a href="news-details.html">read more <i
-                                                className="icon-arrow-right-1"></i></a>
-                                            <a href="#"><i className="fal fa-share-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
-                                <div className="single-blog-card style-3">
-                                    <div className="blog-featured-thumb bg-cover"
-                                         style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
-                                    <div className="content">
-                                        <div className="post-top-meta d-flex flex-wrap align-items-center">
-                                            <div className="post-date">
-                                                <a href="#"><i className="fal fa-calendar-alt"></i>18 Jan 2022</a>
-                                            </div>
-                                            <div className="post-comment">
-                                                <a href="#"><i className="icon-message"></i>02 Comments</a>
-                                            </div>
-                                        </div>
-                                        <h3><a href="news-details.html">Web Development</a></h3>
-                                        <div className="excerpt">
-                                            <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
-                                        </div>
-                                        <div className="btn-link-share d-flex justify-content-between align-items-center">
-                                            <a href="news-details.html">read more <i
-                                                className="icon-arrow-right-1"></i></a>
-                                            <a href="#"><i className="fal fa-share-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="150">
-                                <div className="single-blog-card style-3">
-                                    <div className="blog-featured-thumb bg-cover"
-                                         style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
-                                    <div className="content">
-                                        <div className="post-top-meta d-flex flex-wrap align-items-center">
-                                            <div className="post-date">
-                                                <a href="#"><i className="fal fa-calendar-alt"></i>18 Jan 2022</a>
-                                            </div>
-                                            <div className="post-comment">
-                                                <a href="#"><i className="icon-message"></i>02 Comments</a>
-                                            </div>
-                                        </div>
-                                        <h3><a href="news-details.html">Web Development</a></h3>
-                                        <div className="excerpt">
-                                            <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
-                                        </div>
-                                        <div className="btn-link-share d-flex justify-content-between align-items-center">
-                                            <a href="news-details.html">read more <i
-                                                className="icon-arrow-right-1"></i></a>
-                                            <a href="#"><i className="fal fa-share-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div className="col-md-4">
+                            <div className="img-container">
+                                <img className='tell-us-2' src='/assets/mbs/tell-us.png' width='100%' style={{marginTop: '50px'}} />
                             </div>
                         </div>
                     </div>
+                    
                 </section>
+
+                <section className="our-service-provide"
+                
+                    style={{
+                        backgroundImage: "url('/assets/mbs/bg-experience.png')",
+                        backgroundSize: 'cover',
+                        backgroundColor: '#a100ff',
+                        backgroundPosition: "center bottom"
+                    }}
+                
+                >
+                    
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="img-container">
+                                <img className='tell-us-1' src='/assets/mbs/our-promise.png' width='100%' />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="container" style={{padding: '20px'}}>
+                    
+                    <div className="row">
+
+                        {experiences.map((item:any, index:number) => (
+
+                        <div className="col-md-3">
+                            <div className="exp-container">
+                                <div className='w-100 text-center'>
+                                    <img className='experience-image' src={`/assets/mbs/${item.img}.svg`} width='100%' />
+                                    <h4 className='experience-name'>{item.title}</h4>
+                                </div>
+                                <div className='experience-hearts-container'>
+                                    <img src='/assets/mbs/hearts-bottom-right.png' width={'30%'} style={{float: 'right'}} />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        ))}
+
+                    </div>
+
+                    </div>
+                    
+                </section>
+
+                <section className="our-service-provide"
+                
+                    style={{
+                        backgroundImage: "url('/assets/mbs/tell-us-bg.png')",
+                        backgroundSize: 'cover',
+                        backgroundColor: '#a100ff',
+                        backgroundPosition: "center"
+                    }}
+                
+                >
+                    
+                    <div className="row">
+                        <div className="col-md-8">
+                            <div className="img-container pt-150 pb-50">
+                                <a href='/contact-us'>
+                                    <img className='tell-us-3' src='/assets/mbs/bg-experience-bottom.svg' width='100%' />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
             </div>
             {/*    content-area    */}
 
-            <section className="cta-banner style-3">
-                <div className="container-fluid bg-cover section-bg"
-                     style={{background: "none", backgroundColor: '#efefef', padding: 0}}>
-
-                    <img src={`assets/elements/banners/banner-home-footer.png`} className={'w-100'} style={{marginTop: '-5px'}} />
-
-                </div>
-            </section>
 
             <section className="cta-banner style-3" style={{backgroundColor: '#efefef'}}>
                 <div className="container-fluid bg-cover section-bg"

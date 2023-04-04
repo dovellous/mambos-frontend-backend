@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../../auth/provider/AuthProvider";
-import {HomePageSlider} from "../layout/widgets/sliders/HomePageSlider";
+import {ExperiencePageSlider} from "../layout/widgets/sliders/ExperiencePageSlider";
 
 
 type PageProps = {
@@ -10,164 +10,218 @@ type PageProps = {
 
 const Corporate:React.FunctionComponent<PageProps> = ({ children, ...props}) : any | null => {
 
-    const { user }: any = useAuth();
 
     return (
         <>
 
-            <HomePageSlider />
+            
 
-            <div className="content-area">
+            
 
+<div className="content-areax">
 
-                <section className="our-service-provide techex-landing-page">
-                    <div className="container">
+<section className="our-service-provide"
 
-                        <div className="row text-center">
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
-                                <div className="single-blog-card style-3 content pt-5 pb-5 pl-3 pr-3">
-                                    <h3>
-                                        <img src={'/assets/elements/banners/home-3up-order.svg'} style={{height: '60px', marginBottom: '20px'}}/>
-                                    </h3>
-                                    <p>Order ahead and get your meal to-go from the restuarant.</p>
-                                </div>
-                            </div>
+    style={{
+        backgroundImage: "url('/assets/mbs/tell-us-bg.png')",
+        backgroundSize: 'cover',
+        backgroundColor: '#a100ff',
+        backgroundPosition: "center bottom"
+    }}
 
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
-                                <div className="single-blog-card style-3 content pt-5 pb-5 pl-3 pr-3">
-                                    <h3>
-                                        <img src={'/assets/elements/banners/home-3up-delivery.svg'} style={{height: '60px', marginBottom: '20px'}}/>
-                                    </h3>
-                                    <p>Craving a taste of Royalty? We deliver for free in the CBD. Ts & Cs apply.</p>
-                                </div>
-                            </div>
-
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
-                                <div className="single-blog-card style-3 content pt-5 pb-5 pl-3 pr-3">
-                                    <h3>
-                                        <img src={'/assets/elements/banners/home-3up-feast.svg'} style={{height: '60px', marginBottom: '20px'}}/>
-                                    </h3>
-                                    <p>Na Enjoyment. Visit us, order your favourate meal, grab a table and Enjoy.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                <section className="blog-section techex-landing-page"
-
-                         style={{
-                             backgroundImage: "url('/assets/elements/banners/bg-body.svg')",
-                             backgroundSize: 'cover',
-                             backgroundColor: '#a100ff',
-                             backgroundBlendMode: "difference",
-                             backgroundPosition: "center"
-                         }}
-                >
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="section-title text-center">
-                                    <h1 data-aos="fade-up" data-aos-delay="100">
-                                        <img src={`assets/elements/banners/txt-home-favourites.svg`} />
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="row">
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up">
-                                <div className="single-blog-card style-3">
-                                    <div className="blog-featured-thumb bg-cover"
-                                         style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
-                                    <div className="content">
-                                        <div className="post-top-meta d-flex flex-wrap align-items-center">
-                                            <div className="post-date">
-                                                <a href="#"><i className="fal fa-calendar-alt"></i>18 Jan 2022</a>
-                                            </div>
-                                            <div className="post-comment">
-                                                <a href="#"><i className="icon-message"></i>02 Comments</a>
-                                            </div>
-                                        </div>
-                                        <h3><a href="news-details.html">Web Development</a></h3>
-                                        <div className="excerpt">
-                                            <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
-                                        </div>
-                                        <div className="btn-link-share d-flex justify-content-between align-items-center">
-                                            <a href="news-details.html">read more <i
-                                                className="icon-arrow-right-1"></i></a>
-                                            <a href="#"><i className="fal fa-share-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
-                                <div className="single-blog-card style-3">
-                                    <div className="blog-featured-thumb bg-cover"
-                                         style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
-                                    <div className="content">
-                                        <div className="post-top-meta d-flex flex-wrap align-items-center">
-                                            <div className="post-date">
-                                                <a href="#"><i className="fal fa-calendar-alt"></i>18 Jan 2022</a>
-                                            </div>
-                                            <div className="post-comment">
-                                                <a href="#"><i className="icon-message"></i>02 Comments</a>
-                                            </div>
-                                        </div>
-                                        <h3><a href="news-details.html">Web Development</a></h3>
-                                        <div className="excerpt">
-                                            <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
-                                        </div>
-                                        <div className="btn-link-share d-flex justify-content-between align-items-center">
-                                            <a href="news-details.html">read more <i
-                                                className="icon-arrow-right-1"></i></a>
-                                            <a href="#"><i className="fal fa-share-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="150">
-                                <div className="single-blog-card style-3">
-                                    <div className="blog-featured-thumb bg-cover"
-                                         style={{backgroundImage: "url('assets/img/case/2.jpg')" }} ></div>
-                                    <div className="content">
-                                        <div className="post-top-meta d-flex flex-wrap align-items-center">
-                                            <div className="post-date">
-                                                <a href="#"><i className="fal fa-calendar-alt"></i>18 Jan 2022</a>
-                                            </div>
-                                            <div className="post-comment">
-                                                <a href="#"><i className="icon-message"></i>02 Comments</a>
-                                            </div>
-                                        </div>
-                                        <h3><a href="news-details.html">Web Development</a></h3>
-                                        <div className="excerpt">
-                                            <p>Lorem ipsum dolor sitconsectetur adipiscing eiusmod tempor.</p>
-                                        </div>
-                                        <div className="btn-link-share d-flex justify-content-between align-items-center">
-                                            <a href="news-details.html">read more <i
-                                                className="icon-arrow-right-1"></i></a>
-                                            <a href="#"><i className="fal fa-share-alt"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+>
+    
+    <div className="row">
+        <div className="col-md-12">
+            <div className="img-container">
+                <img className='about-us-1' src='/assets/mbs/about-1.png' width='100%' />
             </div>
-            {/*    content-area    */}
+        </div>
+    </div>
 
-            <section className="cta-banner style-3">
-                <div className="container-fluid bg-cover section-bg"
-                     style={{background: "none", backgroundColor: '#efefef', padding: 0}}>
+    <div className="row">
+        <div className="container">
+            <div className="fs-lg text-center mambos-font mt-50">
+            <p className="fs-24 pt-20 pb-20 ">The world over, one of the most appreciated food is chicken for its tender and rich taste, when prepared right and given a professional artistry and love, it becomes a meal you cannot go without. Tradition and modernity, comfort and dynamism, elegance,
+                            and immediacy, are just some of the demands from those who prepare the meals at Mambo’s Chicken.</p>
+                        <p className="fs-24 pt-20 pb-20 ">A challenge that Mambo’s Chicken welcomes through the strength of their experience, value of their quality, and eclecticism of the full menu on offer. Fried &amp; Grilled Chicken, Burgers, and a combination of these served with traditional Sadza or Chips
+                            are made to interpret the versatility, the most diverse styles in recipes, merging the needs of the client and desired taste with the flavor and prestige typical of “cuisines” from around the world.</p>
+                            <img src='/assets/mbs/bottom-text-border.svg' className='mt-80 mb-80' width='200px' />
+            </div>
+        </div>
+    </div>
+    <div className="row">
+        <div className="col-md-12">
+            <div className="img-container">
+                <img className='about-us-1' src='/assets/mbs/about-2.png' width='100%' />
+            </div>
+        </div>
+    </div>
 
-                    <img src={`assets/elements/banners/banner-home-footer.png`} className={'w-100'} style={{marginTop: '-5px'}} />
+    <div className="row">
+        <div className="container">
+            <div className="fs-lg text-center mambos-font mt-50">
+                <p className="fs-24 pt-20 pb-20 ">Mambo’s Chicken was opened in Harare, Zimbabwe in 2018. It is a true taste of Fried and Grilled Chicken, that’s because Mambo’s is a family business. On any given day, you can bet you will find the best cooking and serving of food made to carter to the
+                            heart and satisfy anyone with the royal experience as priority for every customer we serve.&nbsp;</p>
+                        <p  className="fs-24 pt-20 pb-20 ">We are honored and humbled to be able to serve so many each day and even more so to have that passion recognized by others.</p>
+                        <img src='/assets/mbs/bottom-text-border.svg' className='mt-80 mb-80' width='200px' />
+            </div>
+        </div>
+    </div>
 
+</section>
+
+
+</div>
+{/*    content-area    */}
+
+<div className="content-areax">
+
+<section className="our-service-provide"
+
+    style={{
+        backgroundImage: "url('/assets/mbs/tell-us-bg.png')",
+        backgroundSize: 'cover', backgroundRepeat: 'repeat',
+        backgroundColor: '#a100ff',
+        backgroundPosition: "left top"
+    }}
+
+>
+
+<img className='about-us-1' src='/assets/mbs/about-3.png' width='100%' />
+    
+    <div className="row" 
+        style={{
+            backgroundImage: "url('/assets/mbs/text-bg.png')",
+            backgroundSize: 'contain', 
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: 'rgb(248 246 234)',
+            backgroundPosition: "left top",
+            minHeight: '300px', 
+            padding: '36px', 
+            color: '#ffffff !important'
+
+        }}>
+        <div className="col-md-12">
+            <div className="img-container">
+                <h1 className="text-white text-center" style={{fontSize: '50px'}} >Vision</h1>
+            </div>
+        </div>
+    </div>
+
+    <div className="row">
+        <div className="container">
+            <div className="fs-lg text-center mambos-font mt-0">
+            <img src='/assets/mbs/triangle.png' className='m-0' width='36px' />
+            <p className="fs-24 pt-30 pb-20 max-width-500">To operate the most profitable and largest CFR
+business in the world focused
+on ensuring that both customer and employee
+are treated as Royalty.</p>
+                            <img src='/assets/mbs/bottom-text-border.svg' className='mt-80 mb-80' width='200px' />
+            </div>
+        </div>
+    </div>
+
+
+
+    <img className='about-us-1' src='/assets/mbs/about-4.png' width='100%' />
+    
+    <div className="row" 
+        style={{
+            backgroundImage: "url('/assets/mbs/text-bg-2.png')",
+            backgroundSize: 'contain', 
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: 'rgb(248 246 234)',
+            backgroundPosition: "left top",
+            minHeight: '300px', 
+            padding: '36px', 
+            color: '#ffffff !important'
+
+        }}>
+        <div className="col-md-12">
+            <div className="img-container">
+                <h1 className="text-white text-center" style={{fontSize: '50px'}} >Mission</h1>
+            </div>
+        </div>
+    </div>
+
+    <div className="row">
+        <div className="container">
+            <div className="fs-lg text-center mambos-font mt-0">
+            <img src='/assets/mbs/triangle-2.png' className='m-0' width='36px' />
+            <p className="fs-24 pt-30 pb-20 max-width-500">To be the best CFR brand of choice in the world
+offering product quality, healthy and nutritious
+competitively priced meals offered
+with exceptional service.</p>
+                            <img src='/assets/mbs/bottom-text-border.svg' className='mt-80 mb-80' width='200px' />
+            </div>
+        </div>
+    </div>
+
+
+
+    <img className='about-us-1' src='/assets/mbs/about-5.png' width='100%' />
+    
+    <div className="row" 
+        style={{
+            backgroundImage: "url('/assets/mbs/text-bg.png')",
+            backgroundSize: 'contain', 
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: 'rgb(248 246 234)',
+            backgroundPosition: "left top",
+            minHeight: '300px', 
+            padding: '36px', 
+            color: '#ffffff !important'
+
+        }}>
+        <div className="col-md-12">
+            <div className="img-container">
+                <h1 className="text-white text-center" style={{fontSize: '50px'}} >Core Values</h1>
+            </div>
+        </div>
+    </div>
+
+    <div className="row">
+        <div className="container">
+            <div className="fs-lg text-center mambos-font mt-0">
+            <img src='/assets/mbs/triangle.png' className='m-0' width='36px' />
+            <div className="row">
+                <div className="col-md-6">
+                    <p className="fs-24 pt-30 pb-20 max-width-500x">
+                        <ul>
+                            <li>Leadership</li>
+                            <li>Accountability</li>
+                            <li>Family</li>
+                            <li>Integrity</li>
+                            <li>Integrity</li>
+                        </ul>
+                    </p>
                 </div>
-            </section>
+                <div className="col-md-6">
+                <p className="fs-24 pt-30 pb-20 max-width-500x">
+                        <ul>
+                            <li>Passion</li>
+                            <li>Accountability</li>
+                            <li>Diversity</li>
+                            <li>Quality</li>
+                            <li>Teamwork</li>
+                        </ul>
+                    </p>
+                </div>
+
+            </div>
+                            <img src='/assets/mbs/bottom-text-border.svg' className='mt-80 mb-80' width='200px' />
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+</div>
+{/*    content-area    */}
+
 
             <section className="cta-banner style-3" style={{backgroundColor: '#efefef'}}>
                 <div className="container-fluid bg-cover section-bg"
